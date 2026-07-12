@@ -1,0 +1,13 @@
+python -m venv venv          # first time only
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt   # first time / after deps change
+uvicorn app.main:app --reload
+
+Frontend (Vite/React, from frontend/):
+cd "C:\Turium Assessment\frontend"
+npm install   # already has node_modules, only needed if deps change
+npm run dev
+
+Backend serves on http://127.0.0.1:8000, frontend dev server on http://localhost:5173 by default. Want me to run them now?
+
+
